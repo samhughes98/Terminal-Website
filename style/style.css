@@ -1,6 +1,6 @@
 @font-face {
   font-family: "terminal";
-  src: url("Cascadia.ttf");
+  src: url("C:/Users/samhu/Terminal-Website/style/fonts/Cascadia.ttf");
 }
 
 body {
@@ -9,17 +9,17 @@ body {
   color: white;
   background-color: black;
   min-width: 550px;
+  overflow: hidden;
 }
 
 
 #intro {
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   color: #c0fff4;
 }
 
 #divtext {
-  font-size: 18px;
   background-color: black;
   color: white;
   border: none;
@@ -28,7 +28,7 @@ body {
 
 #usrinput {
   font-family: "terminal";
-  font-size: 16px;
+  font-size: 20px;
   resize: none;
   border: none;
   width: 100%;
