@@ -61,23 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
         //output text
         const helpcmd =
           "\n\nAvailable Commands: \n\n" +
-          " who    -  Allow me to introduce myself\n" +
-          " what   -  What do I do?\n" +
-          " where  -  Github and Linkedin links\n\n" +
-          " showme -  See my ASCII Art skills\n" +
-          " clear  -  Clear current terminal\n" +
-          " clearimg - clear the drawings\n\n>";
+          " who      - Allow me to introduce myself\n" +
+          " what     - What do I do?\n" +
+          " where    - Github and Linkedin links\n\n" +
+          " showme   - See my ASCII Art skills\n" +
+          " clear    - Clear current terminal\n" +
+          " clearimg - clear the drawings\n" +
+          "\n return - Head back to the homescreen\n\n>";
 
         const bio =
-          "\n\nHi! My name is Samuel Hughes, I am a recent graduate of Computer Science from Cardiff Metropolitan University where\n" +
+          "\n\nHi! My name is Samuel Hughes, I am a recent graduate of Computer Science from Cardiff Metropolitan \nUniversity where " +
           "I passed with a First Bachelors degree with honours" +
-          "\n\nMy Hobbies include playing guitar and drums, watching/playing football and of course programming!\n\n>";
+          "\n\nMy Hobbies include playing music, Football and programming!\n\n>";
 
         const whatido =
           "\n\nI am a graduate software engineer, specialising in:\n\n  -Python\n  -C++\n  -HTML/CSS/JavaScript\n  -MySQL\n\n>";
           
         const socials =
-          "\n\nHere are my social links for you to view:\n\nGithub: \nhttps://github.com/samhughes98 \n\nLinkedin: \nhttps://www.linkedin.com/in/sam-hughes-286000147 \n\n>";
+          "\n\nHere are my social links for you to view:\n\nGithub: \nhttps://github.com/samhughes98 \n\nLinkedin: \nhttps://www.linkedin.com/in/sam-hughes-286000147 \n\nPlease enter 'github' or 'linkedin' to visit either page! :) \n\n>";
 
         const imgempty = "\nCanvas is already empty!\n\n>";
 
@@ -120,6 +121,18 @@ document.addEventListener("DOMContentLoaded", function () {
             x.setSelectionRange(10000, 10000);
           }
 
+        if(content.at(-1) === ">return"){
+          const ret = "\n>returning to the homepage..."
+          if (count < ret.length) {
+            x.value += ret.charAt(count);
+            count++;
+            //for stylistic purposes to appear as printing in terminal style
+            setTimeout(handleinput, speed);
+            x.setSelectionRange(10000, 10000);
+            window.location.replace("loading.html");
+          }
+        }
+
         //if input is who, continue
         if (content.at(-1) === ">who") {
           if (count < bio.length) {
@@ -150,7 +163,29 @@ document.addEventListener("DOMContentLoaded", function () {
             //for stylistic purposes to appear as printing in terminal style
             setTimeout(handleinput, speed);
           }
-        }
+      }
+
+      if(content.at(-1) === ">github"){
+        const gitmsg = "\n\nSending to my Github Page...";
+        if (count < gitmsg.length) {
+          x.value += gitmsg.charAt(count);
+          count++;
+          //for stylistic purposes to appear as printing in terminal style
+          setTimeout(handleinput, speed);
+          window.location.replace("https://github.com/samhughes98");
+      }
+    }
+
+    if(content.at(-1) === ">linkedin"){
+      const LImsg = "\n\nSending to my LinkedIn Page...";
+      if (count < LImsg.length) {
+        x.value += LImsg.charAt(count);
+        count++;
+        //for stylistic purposes to appear as printing in terminal style
+        setTimeout(handleinput, speed);
+        window.location.replace("https://www.linkedin.com/in/sam-hughes-286000147/");
+    }
+  }
 
         //if input is where, continue
         if (content.at(-1) === ">showme") {
@@ -186,6 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //if input is not valid, continue
         console.log("Test: " + content.at(-1));
+        
       }
     }
     handleinput();

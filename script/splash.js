@@ -28,9 +28,9 @@ function moving() {
       if (width >= 100) {
         clearInterval(id);
         j = 0;
-        /*for (let i = 0; i < arr.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
           loginmsg(i);
-        }*/
+        }
       } else {
         width++;
         element.style.width = width + "%";
@@ -39,14 +39,14 @@ function moving() {
   }
 }
 
-/*function loginmsg(i) {
+function loginmsg(i) {
   setTimeout(function () {
     welcomemsg.innerHTML = "LOGGING IN" + arr[i];
-    if( i === 6){
+    if( i === 5){
         window.location.replace("index.html");
     }
   }, 1000 * i);
-}*/
+}
 
 timer();
 moving();
