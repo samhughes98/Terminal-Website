@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "terminal";
+  src: url("Cascadia.ttf");
+}
+
+body {
+  font-family: "terminal";
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  min-width: 550px;
+}
+
+
+#intro {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#divtext {
+  font-size: 16px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: default;
+}
+
+#usrinput {
+  font-family: "terminal";
+  font-size: 16px;
+  resize: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+}
+
+#usrinput:focus {
+  outline: none !important;
+}
+
