@@ -42,7 +42,7 @@ function moving() {
 function loginmsg(i) {
   setTimeout(function () {
     welcomemsg.innerHTML = "LOGGING IN" + arr[i];
-    if( i === 5){
+    if( i === 4){
         window.location.replace("index.html");
     }
   }, 1000 * i);

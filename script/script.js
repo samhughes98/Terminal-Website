@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (letter < text.length) {
       document.getElementById("intro").innerHTML += text.charAt(letter);
       letter++;
-      let speed = Math.floor(Math.random() * 150) - 200;
+      let speed = 20;
       setTimeout(typeText, speed);
       if (letter == text.length) {
         showinput();
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var content = x.value.split("\n");
 
     //speed at which output is printed to user
-    let speed = Math.floor(Math.random() * 150) - 200;
+    let speed = 15;
     let count = 0;
     let count1 = 0;
     let storage = [];
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "\n\nMy Hobbies include playing music, Football and programming!\n\n>";
 
         const whatido =
-          "\n\nI am a graduate software engineer, specialising in:\n\n  -Python\n  -C++\n  -HTML/CSS/JavaScript\n  -MySQL\n\n>";
+          "\n\nI am a graduate software engineer, specialising in:\n\n  -Python\n  -C++\n  -HTML/CSS/JavaScript\n  -MySQL\n -Cyber Security\n>";
           
         const socials =
           "\n\nHere are my social links for you to view:\n\nGithub: \nhttps://github.com/samhughes98 \n\nLinkedin: \nhttps://www.linkedin.com/in/sam-hughes-286000147 \n\nPlease enter 'github' or 'linkedin' to visit either page! :) \n\n>";
