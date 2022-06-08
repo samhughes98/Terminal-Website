@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "terminal";
+    src: url("Cascadia.ttf");
+  }
+
+body{
+    background-color: black;
+    font-family: 'terminal';
+    font-size:18px;
+    text-align: center;
+}

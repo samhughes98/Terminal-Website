@@ -15,11 +15,11 @@ body {
 #intro {
   font-size: 16px;
   text-decoration: none;
+  color: #c0fff4;
 }
 
 #divtext {
-  font-size: 16px;
-  width: 100%;
+  font-size: 18px;
   background-color: black;
   color: white;
   border: none;
@@ -32,12 +32,33 @@ body {
   resize: none;
   border: none;
   width: 100%;
-  height: 100%;
+  height:100%;
   background: black;
   color: white;
 }
 
 #usrinput:focus {
   outline: none !important;
+}
+
+#extras{
+  display: block;
+  float:right;
+  font-size:20px;
+  margin-left:1000px;
+  top:60px;
+  position:absolute;
+  font-family: "terminal";
+  resize: none;
+  border: none;
+  width: 50%;
+  height:70%;
+  background: black; 
+  color: rgb(20, 170, 0);;
+}
+
+#extras:focus {
+  outline: none !important;
+  caret-color: transparent;
 }
 
