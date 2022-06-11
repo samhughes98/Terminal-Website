@@ -1,12 +1,12 @@
 @font-face {
   font-family: "terminal";
-  src: url("C:/Users/samhu/Terminal-Website/style/fonts/Cascadia.ttf");
+  src: url('fonts/Cascadia.ttf');
 }
 
 body {
   font-family: "terminal";
   text-decoration: none;
-  color:rgb(20, 170, 0);
+  color:#0f0;
   background-color: black;
   min-width: 550px;
   overflow: hidden;
@@ -34,7 +34,7 @@ body {
   width: 100%;
   height:100%;
   background: black;
-  color:rgb(20, 170, 0);
+  color:#0f0;
 }
 
 #usrinput:focus {

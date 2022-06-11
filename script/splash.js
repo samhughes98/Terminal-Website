@@ -43,7 +43,7 @@ function loginmsg(i) {
   setTimeout(function () {
     welcomemsg.innerHTML = "LOGGING IN" + arr[i];
     if( i === 4){
-        window.location.replace("index.html");
+        window.location.replace("main.html");
     }
   }, 1000 * i);
 }

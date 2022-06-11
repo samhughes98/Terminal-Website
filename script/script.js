@@ -5,7 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
     "\n" +
     "> To see available commands please enter 'help'.";
 
-  const text1 = "Copyright Samuel-Hughes&copy 2022";
+  const text1 =  String.raw`
+   _____         __  __   _    _ _    _  _____ _    _ ______  _____  
+  / ____|  /\   |  \/  | | |  | | |  | |/ ____| |  | |  ____|/ ____|
+ | (___   /  \  | \  / | | |__| | |  | | |  __| |__| | |__  | (___  
+  \___ \ / /\ \ | |\/| | |  __  | |  | | | |_ |  __  |  __|  \___ \ 
+  ____) / ____ \| |  | | | |  | | |__| | |__| | |  | | |____ ____) |
+ |_____/_/    \_\_|  |_| |_|  |_|\____/ \_____|_|  |_|______|_____/ 
+                                                                      
+______________________________________________________________________                                        
+  ` + "\nCopyright Samuel-Hughes&copy 2022";
+
+  
   const end = 1;
   var x = document.getElementById("usrinput");
 
@@ -129,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //for stylistic purposes to appear as printing in terminal style
             setTimeout(handleinput, speed);
             x.setSelectionRange(10000, 10000);
-            window.location.replace("loading.html");
+            window.location.replace("index.html");
           }
         }
 
